@@ -294,6 +294,7 @@ const Cell = props => {
   if (isPressable && !isDisabled) {
     return (
       <TouchableHighlight
+        accessibilityLabel={title} testID={title}
         activeOpacity={highlightActiveOpacity}
         onPress={onPress}
         underlayColor={highlightUnderlayColor}
